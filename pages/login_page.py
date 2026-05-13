@@ -31,3 +31,14 @@ class LoginPage(BasePage):
 
     def logout(self):
         self.click(self.LOGOUT_BTN)
+
+    def quick_login(self, home_page, signup_page):
+        # helper - creates a fresh user, logs out, logs back in
+        # used for checkout tests that need a logged-in user
+        user = signup_page.signup_new_user(home_page)
+        self.logout()
+
+        home_page.click_signup_login()
+        self.login(user["email"], user["password"])
+
+        return user
