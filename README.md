@@ -1,5 +1,7 @@
 # Playwright E2E Test Automation
 
+[![Tests](https://github.com/athulyabiju23/playwright-automationexercise/actions/workflows/tests.yml/badge.svg)](https://github.com/athulyabiju23/playwright-automationexercise/actions/workflows/tests.yml)
+
 End-to-end test automation for [automationexercise.com](https://automationexercise.com) using Playwright with Python and Pytest. Built with the Page Object Model pattern and integrated with GitHub Actions CI.
 
 ## Tech Stack
