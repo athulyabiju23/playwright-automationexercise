@@ -1,0 +1,22 @@
+# python stuff
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# venv
+venv/
+env/
+
+# playwright + reports
+reports/
+test-results/
+playwright-report/
+
+# env files
+.env
+
+# ide
+.vscode/
+.idea/
+.DS_Store
