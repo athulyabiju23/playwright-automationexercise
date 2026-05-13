@@ -16,6 +16,7 @@ class BasePage:
         return self.page.is_visible(locator)
 
     def click(self, locator):
+        self.page.wait_for_selector(locator, state="visible", timeout=15000)
         self.page.click(locator)
 
     def fill(self, locator, text):
