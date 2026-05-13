@@ -8,7 +8,7 @@ def page():
     # blocking ads at network level cuz the site has google vignette popups
     # that block our clicks and break tests
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)
+        browser = p.chromium.launch(headless=True)
         context = browser.new_context()
         pg = context.new_page()
 
